@@ -1,8 +1,8 @@
-ro.sf.lcd_density=240
+ro.sf.lcd_density=210
 ro.sf.lcd_width=154
 ro.sf.lcd_height=90
 ro.opengles.version=131072
-ro.product.hardware=TSHARK_V1.0.0
+ro.product.hardware=PIKEAYOUNG2DTV_V1.0.0
 
 debug.hwui.render_dirty_regions=false
 
@@ -29,6 +29,13 @@ ro.modem.w.vbc=/dev/spipe_w6
 ro.modem.w.id=0
 ro.modem.w.fixnv_size=0x40000
 ro.modem.w.runnv_size=0x60000
+ro.modem.wcn.enable=1
+ro.modem.wcn.dev=/dev/cpwcn
+ro.modem.wcn.tty=/deiv/stty_wcn
+ro.modem.wcn.diag=/dev/slog_wcn
+ro.modem.wcn.assert=/dev/spipe_wcn2
+ro.modem.wcn.id=1
+ro.modem.wcn.count=1
 
 persist.sys.engpc.disable=0
 
@@ -51,16 +58,16 @@ config.displayinfo.use_cache=true
 
 # RIL
 ro.com.android.dataroaming=false
-ro.msms.phone_count=2
-persist.msms.phone_count=2
+ro.msms.phone_count=1
+persist.msms.phone_count=1
 persist.msms.phone_default=0
 persist.msmslt=0
-ro.modem.w.count=2
+ro.modem.w.count=1
 persist.sys.modem.diag=,gser
 sys.usb.gser.count=4
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
-ro.telephony.ril.config=setPrefNwTypeOnUnsolConnected,sim2gsmonly
+ro.telephony.ril.config=setPrefNwTypeOnUnsolConnected
 ro.ril.telephony.mqanelements=6
 persist.sys.sprd.modemreset=0
 persist.sys.sprd.wcnreset=1
