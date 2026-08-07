@@ -23,3 +23,12 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT)
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
+
+# Legacy Spreadtrum Mali ION compatibility
+include $(CLEAR_VARS)
+LOCAL_MODULE := libion_shim
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := ../shims/libion/ion_shim.c
+LOCAL_SHARED_LIBRARIES := libion
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_SHARED_LIBRARY)

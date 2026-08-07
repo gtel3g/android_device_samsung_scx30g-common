@@ -21,3 +21,7 @@ $(call inherit-product-if-exists, vendor/samsung/scx30g-common/scx30g-common-ven
 # Rootdir
 PRODUCT_PACKAGES += \
 	fstab.sc8830
+
+# Legacy Mali ION compatibility
+PRODUCT_PACKAGES += \
+    libion_shim
