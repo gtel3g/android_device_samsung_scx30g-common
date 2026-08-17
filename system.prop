@@ -81,8 +81,5 @@ ro.config.zram.disksize=512M
 fw.max_users=3
 fw.show_multiuserui=1
 
-# EGL blobs crash on screen off
-ro.egl.destroy_after_detach=true
-
 # Enable layer triple buffering
 ro.sf.disable_triple_buffer=0
