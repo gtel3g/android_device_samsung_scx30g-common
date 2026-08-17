@@ -39,7 +39,7 @@ ro.modem.wcn.count=1
 
 persist.sys.engpc.disable=0
 
-ro.config.ksm.support=true
+ro.config.ksm.support=false
 
 #zram config
 ro.config.zram.support=true
