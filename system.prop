@@ -11,8 +11,6 @@ debug.bt.lowspeed=true
 
 persist.ttydev=ttyVUART0
 
-# delay for ConnectivityChange broadcast (ms)
-conn.connectivity_change_delay = 0
 
 # RIL
 persist.modem.w.enable=1
@@ -31,7 +29,6 @@ ro.modem.w.fixnv_size=0x40000
 ro.modem.w.runnv_size=0x60000
 ro.modem.wcn.enable=1
 ro.modem.wcn.dev=/dev/cpwcn
-ro.modem.wcn.tty=/deiv/stty_wcn
 ro.modem.wcn.diag=/dev/slog_wcn
 ro.modem.wcn.assert=/dev/spipe_wcn2
 ro.modem.wcn.id=1
@@ -74,7 +71,6 @@ persist.sys.sprd.wcnreset=1
 
 # Multitasking
 ro.config.swappiness=100
-ro.config.zram.compressor=lzo
 ro.config.zram.disksize=512M
 
 # Multi-user UI
